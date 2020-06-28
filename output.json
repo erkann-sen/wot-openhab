@@ -1,0 +1,193 @@
+{
+    "@context": ["https://www.w3.org/2019/wot/td/v1", {
+        "@language": "en"
+    }],
+    "title": "openHAB_Device",
+    "security": ["nosec_sc"],
+    "securityDefinitions": {
+        "nosec_sc": {
+            "scheme": "nosec"
+        }
+    },
+    "description": "Auto generated TD from openHAB server",
+    "properties": {
+        "HueAmbientLightSensor1_LowBattery": {
+            "description": "Switch object with label Low Battery",
+            "readOnly": true,
+            "observable": true,
+            "type": "string",
+            "forms": [{
+                "op": ["readproperty"],
+                "contentType": "text/plain",
+                "href": "http://127.0.0.1:8080/rest/items/HueAmbientLightSensor1_LowBattery/state"
+            }, {
+                "op": ["observeproperty"],
+                "subprotocol": "sse",
+                "contentType": "application/json",
+                "href": "http://127.0.0.1:8080/rest/events?topics=smarthome/items/HueAmbientLightSensor1_LowBattery/statechanged"
+            }]
+        },
+        "HueColorLamp1_ColorTemperature": {
+            "description": "Dimmer object with label Color Temperature",
+            "readOnly": true,
+            "observable": true,
+            "type": "string",
+            "forms": [{
+                "op": ["readproperty"],
+                "contentType": "text/plain",
+                "href": "http://127.0.0.1:8080/rest/items/HueColorLamp1_ColorTemperature/state"
+            }, {
+                "op": ["observeproperty"],
+                "subprotocol": "sse",
+                "contentType": "application/json",
+                "href": "http://127.0.0.1:8080/rest/events?topics=smarthome/items/HueColorLamp1_ColorTemperature/statechanged"
+            }]
+        },
+        "lamp": {
+            "description": "Switch object with label Am I on",
+            "readOnly": true,
+            "observable": true,
+            "type": "string",
+            "forms": [{
+                "op": ["readproperty"],
+                "contentType": "text/plain",
+                "href": "http://127.0.0.1:8080/rest/items/lamp/state"
+            }, {
+                "op": ["observeproperty"],
+                "subprotocol": "sse",
+                "contentType": "application/json",
+                "href": "http://127.0.0.1:8080/rest/events?topics=smarthome/items/lamp/statechanged"
+            }]
+        },
+        "LocalSun_Daylight_EndTime": {
+            "description": "DateTime object with label End Time",
+            "readOnly": true,
+            "observable": true,
+            "type": "string",
+            "forms": [{
+                "op": ["readproperty"],
+                "contentType": "text/plain",
+                "href": "http://127.0.0.1:8080/rest/items/LocalSun_Daylight_EndTime/state"
+            }, {
+                "op": ["observeproperty"],
+                "subprotocol": "sse",
+                "contentType": "application/json",
+                "href": "http://127.0.0.1:8080/rest/events?topics=smarthome/items/LocalSun_Daylight_EndTime/statechanged"
+            }]
+        },
+        "HueWhiteLamp1_Brightness": {
+            "description": "Dimmer object with label Brightness",
+            "readOnly": true,
+            "observable": true,
+            "type": "string",
+            "forms": [{
+                "op": ["readproperty"],
+                "contentType": "text/plain",
+                "href": "http://127.0.0.1:8080/rest/items/HueWhiteLamp1_Brightness/state"
+            }, {
+                "op": ["observeproperty"],
+                "subprotocol": "sse",
+                "contentType": "application/json",
+                "href": "http://127.0.0.1:8080/rest/events?topics=smarthome/items/HueWhiteLamp1_Brightness/statechanged"
+            }]
+        },
+        "count": {
+            "description": "String object with label Count:",
+            "readOnly": true,
+            "observable": true,
+            "type": "string",
+            "forms": [{
+                "op": ["readproperty"],
+                "contentType": "text/plain",
+                "href": "http://127.0.0.1:8080/rest/items/count/state"
+            }, {
+                "op": ["observeproperty"],
+                "subprotocol": "sse",
+                "contentType": "application/json",
+                "href": "http://127.0.0.1:8080/rest/events?topics=smarthome/items/count/statechanged"
+            }]
+        },
+        "HueColorLamp1_Color": {
+            "description": "Color object with label Color",
+            "readOnly": true,
+            "observable": true,
+            "type": "string",
+            "forms": [{
+                "op": ["readproperty"],
+                "contentType": "text/plain",
+                "href": "http://127.0.0.1:8080/rest/items/HueColorLamp1_Color/state"
+            }, {
+                "op": ["observeproperty"],
+                "subprotocol": "sse",
+                "contentType": "application/json",
+                "href": "http://127.0.0.1:8080/rest/events?topics=smarthome/items/HueColorLamp1_Color/statechanged"
+            }]
+        },
+        "HueAmbientLightSensor1_Illuminance": {
+            "description": "Number:Illuminance object with label Illuminance",
+            "readOnly": true,
+            "observable": true,
+            "type": "string",
+            "forms": [{
+                "op": ["readproperty"],
+                "contentType": "text/plain",
+                "href": "http://127.0.0.1:8080/rest/items/HueAmbientLightSensor1_Illuminance/state"
+            }, {
+                "op": ["observeproperty"],
+                "subprotocol": "sse",
+                "contentType": "application/json",
+                "href": "http://127.0.0.1:8080/rest/events?topics=smarthome/items/HueAmbientLightSensor1_Illuminance/statechanged"
+            }]
+        },
+        "LocalSun_Daylight_StartTime": {
+            "description": "DateTime object with label Start Time",
+            "readOnly": true,
+            "observable": true,
+            "type": "string",
+            "forms": [{
+                "op": ["readproperty"],
+                "contentType": "text/plain",
+                "href": "http://127.0.0.1:8080/rest/items/LocalSun_Daylight_StartTime/state"
+            }, {
+                "op": ["observeproperty"],
+                "subprotocol": "sse",
+                "contentType": "application/json",
+                "href": "http://127.0.0.1:8080/rest/events?topics=smarthome/items/LocalSun_Daylight_StartTime/statechanged"
+            }]
+        }
+    },
+    "actions": {
+        "setStateForHueColorLamp1_ColorTemperature": {
+            "description": "sets state for Dimmer named HueColorLamp1_ColorTemperature",
+            "forms": [{
+                "href": "http://127.0.0.1:8080/rest/items/HueColorLamp1_ColorTemperature",
+                "contentType": "text/plain",
+                "op": ["invokeaction"]
+            }]
+        },
+        "setStateForlamp": {
+            "description": "sets state for Switch named lamp",
+            "forms": [{
+                "href": "http://127.0.0.1:8080/rest/items/lamp",
+                "contentType": "text/plain",
+                "op": ["invokeaction"]
+            }]
+        },
+        "setStateForHueWhiteLamp1_Brightness": {
+            "description": "sets state for Dimmer named HueWhiteLamp1_Brightness",
+            "forms": [{
+                "href": "http://127.0.0.1:8080/rest/items/HueWhiteLamp1_Brightness",
+                "contentType": "text/plain",
+                "op": ["invokeaction"]
+            }]
+        },
+        "setStateForHueColorLamp1_Color": {
+            "description": "sets state for Color named HueColorLamp1_Color",
+            "forms": [{
+                "href": "http://127.0.0.1:8080/rest/items/HueColorLamp1_Color",
+                "contentType": "text/plain",
+                "op": ["invokeaction"]
+            }]
+        }
+    }
+}
